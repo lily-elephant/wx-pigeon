@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-review": "../../component/review/index",
+    "v-detail": "../../component/detail/index"
+  }
+}

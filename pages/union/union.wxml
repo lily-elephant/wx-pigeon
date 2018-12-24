@@ -1,0 +1,5 @@
+<view class="container">
+  <block wx:for="{{union}}" wx:key="index">
+    <v-union union-item="{{item}}" user-info="{{userInfo}}" bind:getinfo="getInfo" bind:join="join" />
+  </block>
+</view>

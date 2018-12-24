@@ -1,0 +1,13 @@
+<view class="container" hidden="{{detailFlag}}">
+  <block wx:for="{{audio}}" wx:key="index">
+    <v-review audio-item="{{item}}" bind:audio="audio" />
+  </block>
+</view>
+<!-- 年审详情 -->
+<view wx:if="{{detailFlag}}">
+  <v-detail audio-item="{{audioItem}}" bind:close="close" />
+</view>
+<!-- 添加新年审 -->
+<view class="icon-wrapper" bindtap="add">
+  <text class="iconfont icon-upload"></text>
+</view>

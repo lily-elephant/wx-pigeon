@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  padding: 24rpx 0;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+.audio-img{
+  display: block;
+  width: 240rpx;
+  height: 160rpx;
+  border: 1px solid #eee;
+}
+.audio-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0 0 24rpx;
+}
+.audio-name{
+  color: #666;
+  font-size: 30rpx;
+}
+.audio-state{
+  font-size: 24rpx;
+}
+.join{
+  color: #666;
+}
+.audio{
+  color: #f00;
+}

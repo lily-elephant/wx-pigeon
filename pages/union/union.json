@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "鸽协",
+  "usingComponents": {
+    "v-union": "../../component/union/index"
+  }
+}

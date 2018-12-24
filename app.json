@@ -1,12 +1,40 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/game/game",
+    "pages/union/union",
+    "pages/me/me",
+    "pages/join/join",
+    "pages/review/review",
+    "pages/revdetail/revdetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/game/game",
+        "iconPath": "icon/game.png",
+        "selectedIconPath": "icon/game_selected.png",
+        "text": "比赛"
+      },
+      {
+        "pagePath": "pages/union/union",
+        "iconPath": "icon/team.png",
+        "selectedIconPath": "icon/team_selected.png",
+        "text": "鸽协"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "icon/me.png",
+        "selectedIconPath": "icon/me_selected.png",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "优鸽",
+    "navigationBarTextStyle": "white"
   }
 }

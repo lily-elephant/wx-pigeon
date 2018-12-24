@@ -1,0 +1,6 @@
+<view class="container">
+  <!-- 没有比赛信息 -->
+  <view class="no-data">{{noData}}</view>
+  <!-- 有比赛信息 -->
+  
+</view>

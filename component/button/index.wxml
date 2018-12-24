@@ -1,0 +1,7 @@
+<button
+  class="btn"
+  open-type="{{openType}}"
+  bindgetuserinfo="bindGetUserInfo"
+>
+  <slot name="content"></slot>
+</button>

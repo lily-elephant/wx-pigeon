@@ -1,0 +1,9 @@
+/* component/opendata/index.wxss */
+.btn{
+  padding: 0!important;
+  background: none;
+  border: none;
+  border-radius: 0;
+  line-height: 1;
+}
+button::after{ border: none; }

@@ -1,0 +1,20 @@
+@import '../../font/iconfont.wxss';
+.container{
+  padding: 0 24rpx;
+}
+.icon-wrapper{
+  position: fixed;
+  bottom: 100rpx;
+  right: 60rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background: #1296db;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 50%;
+}
+.icon-wrapper .iconfont{
+  font-size: 44rpx;
+  font-weight: 600;
+}

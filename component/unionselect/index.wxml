@@ -1,0 +1,3 @@
+<picker class="picker-wrapper" bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}" range-key="label">
+  <view class="picker"><text>当前选择：{{array[index].label}}</text><text class="iconfont icon-down"></text></view>
+</picker>

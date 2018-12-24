@@ -1,0 +1,16 @@
+<view class="container">
+  <image class="union-img" src="{{unionItem.imgSrc}}" />
+  <view class="union-info">
+    <view class="union-title">{{unionItem.title}}</view>
+    <view class="union-count">会员人数：{{unionItem.memberCount}}</view>
+    <view wx:if="{{!_userInfo.nickName}}">
+      <v-button bind:getinfo="getInfo" open-type="{{getUserInfo}}">
+        <view slot="content" class="union-member join">加入协会</view>
+      </v-button>
+    </view>
+    <view wx:else bindtap="join" class="union-member {{unionItem.isMember==1 ? 'joined': 'join'}}">
+        {{unionItem.isMember==1 ? '您已加入该协会' : '加入协会'}}
+    </view>
+    
+  </view>
+</view>

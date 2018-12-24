@@ -1,0 +1,24 @@
+<view class="container">
+  <v-select union-id="{{unionId}}" bind:select="select" />
+  <input bindinput="getName" value="{{name}}" placeholder="请输入姓名" class="input" />
+  <input bindinput="getNumber" value="{{memberNum}}" placeholder="请输入会员证号码" class="input" />
+  <view class="upload-wrapper">
+    <view class="upload-item">
+      <view class="upload" bindtap="upload" data-tag="f1">
+        <text class="iconfont icon-upload" hidden="{{iconFlag1}}"></text>
+        <image mode="aspectFit" wx:if="{{iconFlag1}}" class="upload-img" src="{{pic1}}" />
+      </view>
+      上传会员本第一页
+    </view>
+    <view class="upload-item">
+      <view class="upload" bindtap="upload" data-tag="f2">
+        <text class="iconfont icon-upload" hidden="{{iconFlag2}}"></text>      
+        <image mode="aspectFit" wx:if="{{iconFlag2}}" class="upload-img" src="{{pic2}}" />
+      </view>
+      上传会员本第二页
+    </view>
+  </view>
+  <view class="btn-wrapper gap-60">
+    <button class="btn-primary" size="" bindtap="submit">提交会员审核</button>
+  </view>
+</view>

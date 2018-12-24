@@ -1,0 +1,11 @@
+<view class="container" bindtap="audio">
+  <image class="audio-img" src="{{audioItem.imgSrc}}" />
+  <view class="audio-info">
+    <view class="audio-title">{{audioItem.title}}</view>
+    <view class="audio-name">姓名：{{audioItem.name}}</view>
+    <view class="audio-name">会员号码：{{audioItem.memberNum}}</view>
+    <view class="audio-state {{audioItem.isReview==1 ? 'audioed': 'audio'}}">
+        {{audioItem.isReview==1 ? '已年审' : '未年审'}}
+    </view>
+  </view>
+</view>
