@@ -108,9 +108,11 @@ Page({
         title: '提交成功',
       })
       wx.navigateTo({
-        url: '../review/review',
+        url: '../review/review?show=0',
       })
-    }else{
+    }
+    // 测试用
+    else{
       wx.navigateTo({
         url: '../review/review',
       })
@@ -120,9 +122,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      unionId: options.unionid
-    })
+    if (options.unionid){
+      this.setData({
+        unionId: options.unionid
+      })
+    }
   },
 
   /**

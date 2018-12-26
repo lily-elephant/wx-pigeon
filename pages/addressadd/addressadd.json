@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-region": "../../component/region/index"
+  }
+}

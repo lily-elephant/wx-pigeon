@@ -1,0 +1,43 @@
+page{
+  background: #f7f7f7;
+}
+.container{
+  padding: 0 0 156rpx;
+}
+.item{
+  margin: 20rpx 0;
+  padding: 0 24rpx;
+  background: #fff;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+.name{
+  margin: 0 12rpx 0 0;
+}
+.opt{
+  display: flex;
+  flex-direction: row;
+  padding: 24rpx 0;
+  color: #333;
+}
+.delete{
+  margin: 0 0 0 24rpx;
+  color: #f00;
+}
+.btn-wrapper{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 152rpx;
+  width: 100%;
+  padding: 24rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="item" wx:for="{{addressList}}" wx:key="index">
+    <view class="row">
+      <view class="name">{{item.name}}</view>
+      <view>{{item.phonenumber}}</view>
+    </view>
+    <view class="row">
+      <view>{{item.province}}</view>
+      <view>{{item.city}}</view>
+      <view>{{item.county}}</view>
+      <view>{{item.address}}</view>
+    </view>
+    <view class="opt">
+      <view class="edit" bindtap="edit" data-province="{{item.province}}" data-city="{{item.city}}" data-county="{{item.county}}" data-address="{{item.address}}" data-name="{{item.name}}" data-phonenumber="{{item.phonenumber}}">编辑</view>
+      <view class="delete" bindtap="deleteTap">删除</view>
+    </view>
+  </view>
+</view>
+<view class="btn-wrapper">
+  <button class="btn-primary" bindtap="add">新增收货地址</button>
+</view>

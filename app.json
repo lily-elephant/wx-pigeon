@@ -5,7 +5,12 @@
     "pages/me/me",
     "pages/join/join",
     "pages/review/review",
-    "pages/revdetail/revdetail"
+    "pages/revdetail/revdetail",
+    "pages/address/address",
+    "pages/addressadd/addressadd",
+    "pages/ring/ring",
+    "pages/ringadd/ringadd",
+    "pages/match/match"
   ],
   "tabBar": {
     "selectedColor": "#1296db",

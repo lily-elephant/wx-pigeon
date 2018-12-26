@@ -1,0 +1,14 @@
+@import '../../font/iconfont.wxss';
+
+.picker-wrapper{
+  position: relative;
+  padding: 0 0 0 24rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.picker-wrapper .icon-arrow_right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 48rpx;
+}

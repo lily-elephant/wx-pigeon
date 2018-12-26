@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -56,7 +56,20 @@
 				{
 					"id": -1,
 					"name": "review",
-					"pathName": "pages/review/review"
+					"pathName": "pages/review/review",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "address",
+					"pathName": "pages/address/address",
+					"query": ""
 				}
 			]
 		}

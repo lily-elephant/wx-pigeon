@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="row">
+    <label>姓名</label>
+    <input placeholder="" value="{{name}}" class="input" />
+  </view>
+  <view class="row">
+    <label>手机</label>
+    <input placeholder="" value="{{phonenumber}}" class="input" />
+  </view>
+  <view class="row">
+    <label>地区</label>
+    <view class="region-wrapper">
+      <v-region province="{{province}}" city="{{city}}" county="{{county}}" bind:region="regionChange" />    
+    </view>
+  </view>
+  <view class="row">
+    <label>地址</label>
+    <input placeholder="" value="{{address}}" class="input" />
+  </view>
+  <view class="btn-wrapper gap-60">
+    <button class="btn-primary" bindtap="save">保存收货地址</button>
+  </view>
+</view>

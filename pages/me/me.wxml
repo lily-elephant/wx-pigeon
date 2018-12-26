@@ -1,7 +1,24 @@
-<view class="userinfo">
-  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-  <block wx:else>
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </block>
+<view class="container">
+  <image class="userinfo-avatar" src="{{hasUserInfo && canIUse ? userInfo.avatarUrl : avatar}}" mode="cover" />
+  <view wx:if="{{!hasUserInfo && canIUse}}">
+    <v-button open-type="getUserInfo" bind:getinfo="getInfo">
+      <view class="content" slot="content">登录</view>
+    </v-button>
+  </view>
+  <text wx:else class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="address" bindtap="address">收货地址 <text class="iconfont icon-arrow_right"></text></view>
+<view class="userinfo-wrapper">
+  <view class="userinfo-item" bindtap="member">
+    <image src="../../icon/member.png" class="userinfo-icon" />鸽会会员
+    <text class="iconfont icon-arrow_right"></text>
+  </view>
+  <view class="userinfo-item" bindtap="ring">
+    <image src="../../icon/ring.png" class="userinfo-icon" />鸽子足环
+    <text class="iconfont icon-arrow_right"></text>
+  </view>
+  <view class="userinfo-item" bindtap="match">
+    <image src="../../icon/match.png" class="userinfo-icon" />我的比赛
+    <text class="iconfont icon-arrow_right"></text>
+  </view>
 </view>

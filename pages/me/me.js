@@ -3,6 +3,7 @@ const app = getApp()
 
 Page({
   data: {
+    avatar: '../../icon/avatar.png',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -35,12 +36,39 @@ Page({
       })
     }
   },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+  getInfo: function () {
+    wx.getUserInfo({
+      success: (res) => {
+        app.globalData.userInfo = res.userInfo
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      },
+    })
+  },
+  // 收货地址
+  address(){
+    wx.navigateTo({
+      url: '../address/address',
+    })
+  },
+  // 鸽会会员
+  member(){
+    wx.navigateTo({
+      url: '../review/review?show=1',
+    })
+  },
+  // 鸽子足环
+  ring(){
+    wx.navigateTo({
+      url: '../ring/ring',
+    })
+  },
+  // 我的比赛
+  match(){
+    wx.navigateTo({
+      url: '../match/match',
     })
   }
 })

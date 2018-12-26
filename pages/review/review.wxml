@@ -8,6 +8,10 @@
   <v-detail audio-item="{{audioItem}}" bind:close="close" />
 </view>
 <!-- 添加新年审 -->
-<view class="icon-wrapper" bindtap="add">
+<view class="icon-wrapper" bindtap="add" hidden="{{addFlag}}">
+  <text class="iconfont icon-upload"></text>
+</view>
+<!-- 个人中心进入 -->
+<view class="icon-wrapper" bindtap="add" hidden="{{!addFlag}}">
   <text class="iconfont icon-upload"></text>
 </view>

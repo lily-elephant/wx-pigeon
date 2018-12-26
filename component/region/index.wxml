@@ -1,0 +1,4 @@
+<picker mode="region" value="{{region}}" bindchange='bindRegionChange' custom-item="{{customItem}}" class="picker-wrapper">
+  <view class='picker'>{{!province?"请填写":province}}{{!city?"":city}}{{!county?"" : county}}</view>
+  <text class='iconfont icon-arrow_right'></text>
+</picker>

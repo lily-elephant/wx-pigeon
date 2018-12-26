@@ -12,8 +12,6 @@ Component({
         this.setData({
           _userInfo: newVal
         })
-        //console.log(newVal, 'newVal')
-        //console.log(oldVal, 'oldVal')
       }
     }
   },
