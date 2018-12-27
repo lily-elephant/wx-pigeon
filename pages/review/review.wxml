@@ -5,7 +5,7 @@
 </view>
 <!-- 年审详情 -->
 <view wx:if="{{detailFlag}}">
-  <v-detail audio-item="{{audioItem}}" bind:close="close" />
+  <v-detail audio-item="{{audioItem}}" bind:close="close" bind:review="goReview" />
 </view>
 <!-- 添加新年审 -->
 <view class="icon-wrapper" bindtap="add" hidden="{{addFlag}}">

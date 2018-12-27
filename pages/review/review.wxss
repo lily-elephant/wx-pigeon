@@ -1,4 +1,7 @@
 @import '../../font/iconfont.wxss';
+page{
+  background: #fff
+}
 .container{
   padding: 0 24rpx;
 }

@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    ringArr: [
+      { union: '北京市大兴区信鸽协会',memberNum:'01234567', pigeonNumbers: ['18-01-1111666', '18-01-1111667', '18-01-1111668']},
+      { union: '北京市房山区信鸽协会', memberNum: '01234567', pigeonNumbers: ['18-01-1111666', '18-01-1111667', '18-01-1111668'] }
+    ]
+  },
 
+  // 添加新足环
+  add(){
+    wx.navigateTo({
+      url: '../ringadd/ringadd',
+    })
   },
 
   /**

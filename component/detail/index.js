@@ -20,6 +20,9 @@ Component({
   methods: {
     close(){
       this.triggerEvent('close', {})
+    },
+    review(){
+      this.triggerEvent('review', {})
     }
   }
 })

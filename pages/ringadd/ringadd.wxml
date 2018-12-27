@@ -1,2 +1,15 @@
-<!--pages/ringadd/ringadd.wxml-->
-<text>pages/ringadd/ringadd.wxml</text>
+<view class="container">
+  <view class="row">
+    <view class="fixed-num">19-01-</view>
+    <input class="input" bindinput="start" value="{{startNum}}" placeholder="请输入起始号码" />
+  </view>
+  <view class="row">
+    <input class="input" bindinput="count" value="{{countNum}}" placeholder="请输入足环数量" />
+  </view>
+  <view class="row">
+    <input class="input" bindinput="end" value="{{endNum}}" placeholder="足环截止号码（自动生成）" />
+  </view>
+</view>
+<view class="btn-wrapper">
+  <button class="btn-primary" bindtap="save">新增足环</button>
+</view>

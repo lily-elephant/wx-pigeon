@@ -22,6 +22,10 @@ Component({
   methods: {
     bindGetUserInfo(){
       this.triggerEvent('getinfo', {})
+    },
+    getPhoneNumber(e){
+      // console.log(e)
+      this.triggerEvent('getphone', e.detail)
     }
   }
 })

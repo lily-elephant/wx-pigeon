@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="close" bindtap="close">×</view>
+  <view class="iconfont icon-guanbi" bindtap="close"></view>
   <v-review audio-item="{{audioItem}}" />
   <view class="audio-wrapper">
     <text>年审规则</text>
@@ -9,6 +9,6 @@
     年审规则内容年审规则内容年审规则内容年审规则内容年审规则内容
   </view>
   <view class="btn-wrapper gap-60">
-    <button class="btn-primary">去年审</button>
+    <button class="btn-primary" bindtap="review">去年审</button>
   </view>
 </view>

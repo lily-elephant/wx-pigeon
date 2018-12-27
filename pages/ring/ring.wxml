@@ -1,2 +1,5 @@
-<!--pages/ring/ring.wxml-->
-<text>pages/ring/ring.wxml</text>
+<view class="container">
+  <block wx:for="{{ringArr}}" wx:key="index">
+    <v-ring ring-item="{{item}}" bind:add="add" />
+  </block>
+</view>

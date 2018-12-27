@@ -1,1 +1,23 @@
-/* pages/ringadd/ringadd.wxss */
+.container{
+  padding: 24rpx;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 48rpx;
+}
+.fixed-num{
+  white-space: nowrap;
+}
+.input{
+  padding: 0 10rpx;
+  line-height: 64rpx;
+  height: 64rpx;
+  border: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+}
+.btn-wrapper{
+  padding: 0 24rpx;
+}

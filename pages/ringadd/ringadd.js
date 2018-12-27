@@ -1,13 +1,56 @@
-// pages/ringadd/ringadd.js
+import {toast} from '../../utils/util.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    startNum: null,
+    countNum: null,
+    endNum: null,
   },
+  // 获取input的值
+  start(e) {
+    this.setData({
+      startNum: e.detail.value
+    })
+  },
+  end(e) {
+    this.setData({
+      endNum: e.detail.value
+    })
+  },
+  count(e) {
+    this.setData({
+      countNum: e.detail.value
+    })
+  },
+  // 提交数据不可为空校验
+  _isNull(){
+    if (!this.data.startNum) {
+      toast('起始号码不可为空')
+      return false
+    }
+    if (!this.data.countNum) {
+      toast('足环数量不可为空')
+      return false
+    }
+    if (!this.data.endNum) {
+      toast('足环截止号码不可为空')
+      return false
+    }
+    return true
+  },
+  // 保存
+  save(){
+    if(this._isNull()){
+      wx.navigateBack({
+        delta: 1
+      })
+    }else{
 
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

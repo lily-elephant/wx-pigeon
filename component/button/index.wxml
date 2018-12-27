@@ -2,6 +2,7 @@
   class="btn"
   open-type="{{openType}}"
   bindgetuserinfo="bindGetUserInfo"
+  bindgetphonenumber="getPhoneNumber"
 >
   <slot name="content"></slot>
 </button>

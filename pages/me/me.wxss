@@ -14,10 +14,13 @@ page{
   justify-content: space-between;
 }
 .userinfo-avatar{
-  width: 160rpx;
-  height: 160rpx;
+  width: 120rpx;
+  height: 120rpx;
   border-radius: 2px;
   margin: 0 24rpx 0 0;
+}
+.userinfo-nickname{
+  margin: 0 0 10rpx;
 }
 .userinfo-wrapper{
   margin: 30rpx 0 10rpx;
@@ -44,4 +47,11 @@ page{
   top: 24rpx;
   right: 0;
   line-height: 48rpx;
+}
+.authorize{
+  color: #666;
+  font-size: 30rpx;
+}
+.disabled{
+  color: #666;
 }

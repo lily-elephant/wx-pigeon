@@ -2,23 +2,32 @@
   <image class="userinfo-avatar" src="{{hasUserInfo && canIUse ? userInfo.avatarUrl : avatar}}" mode="cover" />
   <view wx:if="{{!hasUserInfo && canIUse}}">
     <v-button open-type="getUserInfo" bind:getinfo="getInfo">
-      <view class="content" slot="content">登录</view>
+      <view class="content" slot="content">登录/注册</view>
     </v-button>
   </view>
-  <text wx:else class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view wx:else>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    <!-- 如果想获取手机号 -->
+    <!-- <v-button wx:if="{{phoneFlag}}" open-type="getPhoneNumber" bind:getphone="getUserPhone">
+      <view class="authorize" slot="content">授权手机号</view>
+    </v-button>
+    <view wx:else>135****4362</view> -->
+  </view>
 </view>
-<view class="address" bindtap="address">收货地址 <text class="iconfont icon-arrow_right"></text></view>
-<view class="userinfo-wrapper">
+<view class="address {{(!hasUserInfo && canIUse) && 'disabled'}}" bindtap="address">收货地址
+  <text class="iconfont icon-arrow_right"></text>
+</view>
+<view class="userinfo-wrapper {{(!hasUserInfo && canIUse) && 'disabled'}}">
   <view class="userinfo-item" bindtap="member">
-    <image src="../../icon/member.png" class="userinfo-icon" />鸽会会员
+    <image src="{{(!hasUserInfo && canIUse)?'../../icon/member_dis.png': '../../icon/member.png'}}" class="userinfo-icon" />鸽会会员
     <text class="iconfont icon-arrow_right"></text>
   </view>
   <view class="userinfo-item" bindtap="ring">
-    <image src="../../icon/ring.png" class="userinfo-icon" />鸽子足环
+    <image src="{{(!hasUserInfo && canIUse)?'../../icon/ring_dis.png': '../../icon/ring.png'}}" class="userinfo-icon" />鸽子足环
     <text class="iconfont icon-arrow_right"></text>
   </view>
   <view class="userinfo-item" bindtap="match">
-    <image src="../../icon/match.png" class="userinfo-icon" />我的比赛
+    <image src="{{(!hasUserInfo && canIUse)?'../../icon/match_dis.png': '../../icon/match.png'}}" class="userinfo-icon" />我的比赛
     <text class="iconfont icon-arrow_right"></text>
   </view>
 </view>

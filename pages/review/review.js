@@ -26,6 +26,12 @@ Page({
       detailFlag: false
     })
   },
+  // 去年审
+  goReview(){
+    wx.navigateTo({
+      url: '../pay/pay',
+    })
+  },
   // 添加新年审
   add(){
     if(this.data.addFlag){

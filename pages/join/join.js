@@ -114,7 +114,7 @@ Page({
     // 测试用
     else{
       wx.navigateTo({
-        url: '../review/review',
+        url: '../review/review?show=0',
       })
     }
   },
