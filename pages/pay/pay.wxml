@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="pay-img-wrapper">
+    <view class="pay-title">推荐使用微信支付</view>
+    <view class="pay-money">
+      <view class="pay-count">￥{{payCount}}元</view>
+      <image src="{{payImg}}" class="pay-img" />
+    </view>
+  </view>
+  <text decode="true" class="pay-intro">
+    支付说明：
+    将支付图片保存到手机后，用微信打开此图片，长按识别二维码进行支付。将支付成功的截图上传，等待协会确认，协会确认完成后，即完成年审。
+  </text>
+  <button class="btn-primary" bindtap="upload">上传年费支付截图</button>
+</view>

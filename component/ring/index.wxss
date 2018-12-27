@@ -1,0 +1,34 @@
+@import '../../font/iconfont.wxss';
+.container{
+  color: #333;
+}
+.info-wrapper{
+  position: relative;
+  padding: 24rpx;
+  background: #f7f7f7;
+}
+.member-num{
+  font-size: 30rpx;
+  color: #666;
+}
+.pigeon-num{
+  padding: 0 24rpx;
+  text-align: center;
+}
+.item{
+  padding: 24rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.icon-upload{
+  position: absolute;
+  top: 24rpx;
+  right: 20rpx;
+  width: 36rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: #1296db;
+  border: 1px solid #1296db;
+  border-radius: 2px;
+  font-weight: 600;
+}

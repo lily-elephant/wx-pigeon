@@ -1,0 +1,42 @@
+.container{
+  padding: 40rpx 0;
+  color: #333;
+}
+.pay-img-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 30rpx 0;
+  width: 640rpx;
+  height: 550rpx;
+  background: rgb(35, 158, 44);
+}
+.pay-title{
+  line-height: 1;
+  font-size: 44rpx;
+  color: #fff;
+}
+.pay-img{
+  width: 300rpx;
+  height: 300rpx;
+}
+.pay-money{
+  padding: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 44rpx;
+  font-weight: 600;
+  background: #fff;
+}
+.pay-intro{
+  display: block;
+  margin: 0 auto 60rpx;
+  width: 640rpx;
+  text-align: justify;
+}
+.btn-primary{
+  width: 640rpx;
+}

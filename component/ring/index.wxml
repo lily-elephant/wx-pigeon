@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="info-wrapper">
+    <view class="title">{{ringItem.union}}</view>
+    <view class="member-num">会员号码：{{ringItem.memberNum}}</view>
+    <text class="iconfont icon-upload" bindtap="add"></text>
+  </view>
+  <view class="pigeon-num" wx:for="{{ringItem.pigeonNumbers}}" wx:for-item="pigeonNum">
+    <view class="item">{{pigeonNum}}</view>
+  </view>
+</view>
